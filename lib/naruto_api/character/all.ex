@@ -1,4 +1,4 @@
-defmodule NarutoApi.Character.Index do
+defmodule NarutoApi.Character.All do
   alias NarutoApi.{Repo, Character}
 
   def call() do

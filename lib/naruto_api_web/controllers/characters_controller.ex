@@ -4,7 +4,7 @@ defmodule NarutoApiWeb.CharactersController do
   action_fallback NarutoApiWeb.FallbackController
 
   def index(conn, _params) do
-    characters = NarutoApi.index_character()
+    characters = NarutoApi.all_character()
     handle_response(characters, conn, "index.json", :ok)
   end
 
