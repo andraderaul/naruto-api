@@ -13,7 +13,7 @@ defmodule NarutoApiWeb.Router do
 
     resources "/teams", TeamsController, only: [:create, :show, :update, :delete]
 
-    resources "/jutsus", JutsusController, only: [:create, :show, :update, :delete]
+    resources "/jutsus", JutsusController, only: [:create, :index, :show, :update, :delete]
   end
 
   # Enables LiveDashboard only for development

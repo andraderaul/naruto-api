@@ -3,6 +3,11 @@ defmodule NarutoApiWeb.JutsusController do
 
   action_fallback NarutoApiWeb.FallbackController
 
+  def index(conn, _params) do
+    jutsus = NarutoApi.all_jutsu()
+    handle_response(jutsus, conn, "index.json", :ok)
+  end
+
   def create(conn, params) do
     params
     |> NarutoApi.create_jutsu()

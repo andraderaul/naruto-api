@@ -16,4 +16,5 @@ defmodule NarutoApi do
   defdelegate fetch_jutsu(params), to: Jutsu.Get, as: :call
   defdelegate update_jutsu(params), to: Jutsu.Update, as: :call
   defdelegate delete_jutsu(params), to: Jutsu.Delete, as: :call
+  defdelegate all_jutsu(), to: Jutsu.All, as: :call
 end
