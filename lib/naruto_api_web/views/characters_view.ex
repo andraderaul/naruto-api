@@ -2,13 +2,12 @@ defmodule NarutoApiWeb.CharactersView do
   use NarutoApiWeb, :view
 
   alias NarutoApi.Character
-  alias NarutoApiWeb.CharactersView
 
   def render("index.json", %{
         character: character
       }) do
     %{
-      data: render_many(character, CharactersView, "character.json")
+      data: render_many(character, __MODULE__, "character.json", as: :character)
     }
   end
 
