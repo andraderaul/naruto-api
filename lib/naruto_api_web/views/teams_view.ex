@@ -2,13 +2,12 @@ defmodule NarutoApiWeb.TeamsView do
   use NarutoApiWeb, :view
 
   alias NarutoApi.Team
-  alias NarutoApiWeb.TeamsView
 
   def render("index.json", %{
         team: team
       }) do
     %{
-      data: render_many(team, TeamsView, "team.json")
+      data: render_many(team, __MODULE__, "team.json", as: :team)
     }
   end
 

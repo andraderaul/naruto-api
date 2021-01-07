@@ -11,6 +11,7 @@ defmodule NarutoApi do
   defdelegate fetch_team(params), to: Team.Get, as: :call
   defdelegate update_team(params), to: Team.Update, as: :call
   defdelegate delete_team(params), to: Team.Delete, as: :call
+  defdelegate all_teams(), to: Team.All, as: :call
 
   defdelegate create_jutsu(params), to: Jutsu.Create, as: :call
   defdelegate fetch_jutsu(params), to: Jutsu.Get, as: :call

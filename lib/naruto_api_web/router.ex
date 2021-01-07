@@ -11,7 +11,7 @@ defmodule NarutoApiWeb.Router do
     resources "/characters", CharactersController,
       only: [:create, :index, :show, :update, :delete]
 
-    resources "/teams", TeamsController, only: [:create, :show, :update, :delete]
+    resources "/teams", TeamsController, only: [:create, :index, :show, :update, :delete]
 
     resources "/jutsus", JutsusController, only: [:create, :index, :show, :update, :delete]
   end
