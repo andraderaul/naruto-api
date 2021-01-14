@@ -11,6 +11,7 @@ defmodule NarutoApi.Repo.Migrations.CreateCharacterTable do
       add :gender, :string
       add :height, {:array, :float}
       add :weight, {:array, :float}
+      add :picture, :string
 
       timestamps()
     end

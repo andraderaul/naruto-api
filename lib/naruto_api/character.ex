@@ -12,12 +12,13 @@ defmodule NarutoApi.Character do
     field :gender, :string
     field :height, {:array, :float}
     field :weight, {:array, :float}
+    field :picture, :string
 
     timestamps()
   end
 
-  @field [:name, :kanji_name, :birthday, :age, :gender, :height, :weight]
-  @required [:name, :kanji_name]
+  @field [:name, :kanji_name, :birthday, :age, :gender, :height, :weight, :picture]
+  @required [:name]
 
   def build(params) do
     params
