@@ -5,7 +5,7 @@ defmodule NarutoApi.Team.Delete do
   def call(id) do
     case UUID.cast(id) do
       :error ->
-        {:error, "Invalid id format!"}
+        {:error, "Invalid id format!", :bad_request}
 
       {:ok, uuid} ->
         delete(uuid)
@@ -14,7 +14,7 @@ defmodule NarutoApi.Team.Delete do
 
   defp delete(uuid) do
     case fetch_team(uuid) do
-      nil -> {:error, "Team not found!"}
+      nil -> {:error, "Team not found!", :not_found}
       team -> Repo.delete(team)
     end
   end

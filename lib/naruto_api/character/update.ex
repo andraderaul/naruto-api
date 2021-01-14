@@ -5,7 +5,7 @@ defmodule NarutoApi.Character.Update do
   def call(%{"id" => uuid} = params) do
     case UUID.cast(uuid) do
       :error ->
-        {:error, "Invalid id format!"}
+        {:error, "Invalid id format!", :bad_request}
 
       {:ok, _uuuid} ->
         update(params)
@@ -15,7 +15,7 @@ defmodule NarutoApi.Character.Update do
   defp update(%{"id" => uuid} = params) do
     case fetch_character(uuid) do
       nil ->
-        {:error, "Character not found!"}
+        {:error, "Character not found!", :not_found}
 
       character ->
         update_character(character, params)

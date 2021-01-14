@@ -38,7 +38,7 @@ defmodule NarutoApiWeb.JutsusController do
     |> text("")
   end
 
-  defp handle_delete({:error, _reason} = error, _conn), do: error
+  defp handle_delete({:error, _reason, _status_code} = error, _conn), do: error
 
   defp handle_response({:ok, jutsu}, conn, view, status) do
     conn
@@ -46,5 +46,9 @@ defmodule NarutoApiWeb.JutsusController do
     |> render(view, jutsu: jutsu)
   end
 
-  defp handle_response({:error, _changeset} = error, _conn, _view, _status), do: error
+  defp handle_response({:error, _changeset, _status_code} = error, _conn, _view, _status),
+    do: error
+
+  defp handle_response({:error, _changeset} = error, _conn, _view, _status),
+    do: error
 end

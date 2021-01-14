@@ -5,7 +5,7 @@ defmodule NarutoApi.Jutsu.Delete do
   def call(id) do
     case UUID.cast(id) do
       :error ->
-        {:error, "Invalid id format!"}
+        {:error, "Invalid id format!", :bad_request}
 
       {:ok, uuid} ->
         delete(uuid)
@@ -14,7 +14,7 @@ defmodule NarutoApi.Jutsu.Delete do
 
   defp delete(uuid) do
     case fetch_jutsu(uuid) do
-      nil -> {:error, "Jutsu not found!"}
+      nil -> {:error, "Jutsu not found!", :not_found}
       jutsu -> Repo.delete(jutsu)
     end
   end

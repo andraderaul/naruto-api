@@ -38,13 +38,16 @@ defmodule NarutoApiWeb.TeamsController do
     |> text("")
   end
 
-  defp handle_delete({:error, _reason} = error, _conn), do: error
+  defp handle_delete({:error, _reason, _status_code} = error, _conn), do: error
 
   defp handle_response({:ok, team}, conn, view, status) do
     conn
     |> put_status(status)
     |> render(view, team: team)
   end
+
+  defp handle_response({:error, _changeset, _status_code} = error, _conn, _view, _status),
+    do: error
 
   defp handle_response({:error, _changeset} = error, _conn, _view, _status), do: error
 end

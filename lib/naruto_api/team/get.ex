@@ -5,7 +5,7 @@ defmodule NarutoApi.Team.Get do
   def call(id) do
     case UUID.cast(id) do
       :error ->
-        {:error, "Invalid id format!"}
+        {:error, "Invalid id format!", :bad_request}
 
       {:ok, uuid} ->
         get(uuid)
@@ -15,7 +15,7 @@ defmodule NarutoApi.Team.Get do
   defp get(uuid) do
     case Repo.get(Team, uuid) do
       nil ->
-        {:error, "Team not found!"}
+        {:error, "Team not found!", :not_found}
 
       team ->
         {:ok, team}

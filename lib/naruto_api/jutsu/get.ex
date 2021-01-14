@@ -5,7 +5,7 @@ defmodule NarutoApi.Jutsu.Get do
   def call(id) do
     case UUID.cast(id) do
       :error ->
-        {:error, "Invalid id format!"}
+        {:error, "Invalid id format!", :bad_request}
 
       {:ok, uuid} ->
         get(uuid)
@@ -15,7 +15,7 @@ defmodule NarutoApi.Jutsu.Get do
   defp get(uuid) do
     case Repo.get(Jutsu, uuid) do
       nil ->
-        {:error, "Jutsu not found!"}
+        {:error, "Jutsu not found!", :not_found}
 
       jutsu ->
         {:ok, jutsu}

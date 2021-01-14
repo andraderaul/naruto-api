@@ -5,7 +5,7 @@ defmodule NarutoApi.Jutsu.Update do
   def call(%{"id" => uuid} = params) do
     case UUID.cast(uuid) do
       :error ->
-        {:error, "Invalid id format!"}
+        {:error, "Invalid id format!", :bad_request}
 
       {:ok, _uuid} ->
         update(params)
@@ -15,14 +15,14 @@ defmodule NarutoApi.Jutsu.Update do
   defp update(%{"id" => uuid} = params) do
     case fetch_jutsu(uuid) do
       nil ->
-        {:error, "Jutsu not found!"}
+        {:error, "Jutsu not found!", :not_found}
 
       jutsu ->
         update_jutsu(jutsu, params)
     end
   end
 
-  def fetch_jutsu(uuid), do: Repo.get(Jutsu, uuid)
+  defp fetch_jutsu(uuid), do: Repo.get(Jutsu, uuid)
 
   defp update_jutsu(team, params) do
     team

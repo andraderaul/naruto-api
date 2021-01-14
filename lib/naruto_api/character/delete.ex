@@ -5,7 +5,7 @@ defmodule NarutoApi.Character.Delete do
   def call(id) do
     case UUID.cast(id) do
       :error ->
-        {:error, "Invalid id format!"}
+        {:error, "Invalid id format!", :bad_request}
 
       {:ok, uuid} ->
         delete(uuid)
@@ -14,7 +14,7 @@ defmodule NarutoApi.Character.Delete do
 
   defp delete(uuid) do
     case fetch_character(uuid) do
-      nil -> {:error, "Character not found!"}
+      nil -> {:error, "Character not found!", :not_found}
       character -> Repo.delete(character)
     end
   end

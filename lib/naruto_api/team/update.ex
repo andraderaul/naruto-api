@@ -5,7 +5,7 @@ defmodule NarutoApi.Team.Update do
   def call(%{"id" => uuid} = params) do
     case UUID.cast(uuid) do
       :error ->
-        {:error, "Invalid id format!"}
+        {:error, "Invalid id format!", :bad_request}
 
       {:ok, _uuid} ->
         update(params)
@@ -15,14 +15,14 @@ defmodule NarutoApi.Team.Update do
   defp update(%{"id" => uuid} = params) do
     case fetch_team(uuid) do
       nil ->
-        {:error, "Team not found!"}
+        {:error, "Team not found!", :not_found}
 
       team ->
         update_team(team, params)
     end
   end
 
-  def fetch_team(uuid), do: Repo.get(Team, uuid)
+  defp fetch_team(uuid), do: Repo.get(Team, uuid)
 
   defp update_team(team, params) do
     team

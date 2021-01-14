@@ -5,7 +5,7 @@ defmodule NarutoApi.Character.Get do
   def call(id) do
     case UUID.cast(id) do
       :error ->
-        {:error, "Invalid id format!"}
+        {:error, "Invalid id format!", :bad_request}
 
       {:ok, uuid} ->
         get(uuid)
@@ -15,7 +15,7 @@ defmodule NarutoApi.Character.Get do
   defp get(uuid) do
     case Repo.get(Character, uuid) do
       nil ->
-        {:error, "Character not found!"}
+        {:error, "Character not found!", :not_found}
 
       character ->
         {:ok, character}

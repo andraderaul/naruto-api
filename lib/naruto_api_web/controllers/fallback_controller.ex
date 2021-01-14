@@ -8,9 +8,14 @@ defmodule NarutoApiWeb.FallbackController do
     |> render("401.json", message: "User unauthorized")
   end
 
-  def call(conn, {:error, result}) do
-    IO.inspect(result)
+  def call(conn, {:error, result, status}) do
+    conn
+    |> put_status(status)
+    |> put_view(NarutoApiWeb.ErrorView)
+    |> render("400.json", result: result)
+  end
 
+  def call(conn, {:error, result}) do
     conn
     |> put_status(:bad_request)
     |> put_view(NarutoApiWeb.ErrorView)
