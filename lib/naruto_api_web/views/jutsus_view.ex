@@ -30,6 +30,7 @@ defmodule NarutoApiWeb.JutsusView do
         jutsu: %Jutsu{
           id: id,
           name: name,
+          picture: picture,
           inserted_at: inserted_at,
           updated_at: updated_at
         }
@@ -37,6 +38,7 @@ defmodule NarutoApiWeb.JutsusView do
     %{
       id: id,
       name: name,
+      picture: picture,
       inserted_at: inserted_at,
       updated_at: updated_at
     }

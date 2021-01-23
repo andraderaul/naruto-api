@@ -2,6 +2,17 @@ alias NarutoApi.Repo
 alias NarutoApi.Character
 
 Repo.insert!(%Character{
+  name: "Zabuza Momochi",
+  kanji_name: "桃地再不斬",
+  birthday: "August 15",
+  age: [26],
+  gender: "Male",
+  height: [183.0],
+  weight: [72.0],
+  picture: "https://static.wikia.nocookie.net/naruto/images/3/37/Zabuza_Momochi.png"
+})
+
+Repo.insert!(%Character{
   name: "Nadare Rōga",
   kanji_name: "狼牙ナダレ",
   birthday: nil,
@@ -10,7 +21,7 @@ Repo.insert!(%Character{
   height: nil,
   weight: nil,
   picture:
-    "https://static.wikia.nocookie.net/naruto/images/1/19/Nadare_R%C5%8Dga.png/revision/latest?cb=20160116190200"
+    "https://static.wikia.nocookie.net/naruto/images/1/19/Nadare_R%C5%8Dga.png"
 })
 
 Repo.insert!(%Character{
@@ -22,7 +33,7 @@ Repo.insert!(%Character{
   height: nil,
   weight: nil,
   picture:
-    "https://static.wikia.nocookie.net/naruto/images/e/e2/Nae.png/revision/latest?cb=20150725183041"
+    "https://static.wikia.nocookie.net/naruto/images/e/e2/Nae.png"
 })
 
 Repo.insert!(%Character{
@@ -34,7 +45,7 @@ Repo.insert!(%Character{
   height: nil,
   weight: nil,
   picture:
-    "https://static.wikia.nocookie.net/naruto/images/b/be/Nagare.png/revision/latest?cb=20150528132343"
+    "https://static.wikia.nocookie.net/naruto/images/b/be/Nagare.png"
 })
 
 Repo.insert!(%Character{
@@ -46,7 +57,7 @@ Repo.insert!(%Character{
   height: [175.5],
   weight: [40.1],
   picture:
-    "https://static.wikia.nocookie.net/naruto/images/4/46/Nagato.png/revision/latest?cb=20150821081644"
+    "https://static.wikia.nocookie.net/naruto/images/4/46/Nagato.png"
 })
 
 Repo.insert!(%Character{
@@ -58,7 +69,7 @@ Repo.insert!(%Character{
   height: nil,
   weight: nil,
   picture:
-    "https://static.wikia.nocookie.net/naruto/images/4/48/Naho2.png/revision/latest?cb=20110918054525"
+    "https://static.wikia.nocookie.net/naruto/images/4/48/Naho2.png"
 })
 
 Repo.insert!(%Character{
@@ -70,7 +81,7 @@ Repo.insert!(%Character{
   height: [178.0],
   weight: nil,
   picture:
-    "https://static.wikia.nocookie.net/naruto/images/a/ae/Naka_Uchiha.png/revision/latest?cb=20131114131356"
+    "https://static.wikia.nocookie.net/naruto/images/a/ae/Naka_Uchiha.png"
 })
 
 Repo.insert!(%Character{
@@ -82,7 +93,7 @@ Repo.insert!(%Character{
   height: [141.0],
   weight: nil,
   picture:
-    "https://static.wikia.nocookie.net/naruto/images/1/1d/Namida.png/revision/latest?cb=20171220103121"
+    "https://static.wikia.nocookie.net/naruto/images/1/1d/Namida.png"
 })
 
 Repo.insert!(%Character{
@@ -94,7 +105,7 @@ Repo.insert!(%Character{
   height: nil,
   weight: nil,
   picture:
-    "https://static.wikia.nocookie.net/naruto/images/3/3f/Nan.png/revision/latest?cb=20150302185626"
+    "https://static.wikia.nocookie.net/naruto/images/3/3f/Nan.png"
 })
 
 Repo.insert!(%Character{
@@ -106,7 +117,7 @@ Repo.insert!(%Character{
   height: nil,
   weight: nil,
   picture:
-    "https://static.wikia.nocookie.net/naruto/images/1/14/Nanafushi.png/revision/latest?cb=20150626140801"
+    "https://static.wikia.nocookie.net/naruto/images/1/14/Nanafushi.png"
 })
 
 Repo.insert!(%Character{
@@ -129,7 +140,7 @@ Repo.insert!(%Character{
   height: nil,
   weight: nil,
   picture:
-    "https://static.wikia.nocookie.net/naruto/images/c/cf/Nango.PNG/revision/latest?cb=20170129112535"
+    "https://static.wikia.nocookie.net/naruto/images/c/cf/Nango.PNG"
 })
 
 Repo.insert!(%Character{
@@ -141,7 +152,7 @@ Repo.insert!(%Character{
   height: [166.0],
   weight: nil,
   picture:
-    "https://static.wikia.nocookie.net/naruto/images/a/a1/Naori_Uchiha_preview.png/revision/latest?cb=20200605182422"
+    "https://static.wikia.nocookie.net/naruto/images/a/a1/Naori_Uchiha_preview.png"
 })
 
 Repo.insert!(%Character{
@@ -153,7 +164,7 @@ Repo.insert!(%Character{
   height: [185.0],
   weight: nil,
   picture:
-    "https://static.wikia.nocookie.net/naruto/images/8/81/Naraka_Path.png/revision/latest?cb=20160116083050"
+    "https://static.wikia.nocookie.net/naruto/images/8/81/Naraka_Path.png"
 })
 
 Repo.insert!(%Character{
@@ -176,7 +187,7 @@ Repo.insert!(%Character{
   height: [145.3, 147.5, 166.0, 180.0],
   weight: [40.1, 40.6, 50.9],
   picture:
-    "https://static.wikia.nocookie.net/naruto/images/0/09/Naruto_newshot.png/revision/latest?cb=20170621101134"
+    "https://static.wikia.nocookie.net/naruto/images/0/09/Naruto_newshot.png"
 })
 
 Repo.insert!(%Character{
@@ -188,7 +199,7 @@ Repo.insert!(%Character{
   height: nil,
   weight: nil,
   picture:
-    "https://static.wikia.nocookie.net/naruto/images/c/c6/Natori.png/revision/latest?cb=20160113170823"
+    "https://static.wikia.nocookie.net/naruto/images/c/c6/Natori.png"
 })
 
 Repo.insert!(%Character{
@@ -200,7 +211,7 @@ Repo.insert!(%Character{
   height: nil,
   weight: nil,
   picture:
-    "https://static.wikia.nocookie.net/naruto/images/c/c7/Natsu_-_330.png/revision/latest?cb=20130914190022"
+    "https://static.wikia.nocookie.net/naruto/images/c/c7/Natsu_-_330.png"
 })
 
 Repo.insert!(%Character{
@@ -212,7 +223,7 @@ Repo.insert!(%Character{
   height: nil,
   weight: nil,
   picture:
-    "https://static.wikia.nocookie.net/naruto/images/2/24/Natsu_Hyuga.png/revision/latest?cb=20141204202830"
+    "https://static.wikia.nocookie.net/naruto/images/2/24/Natsu_Hyuga.png"
 })
 
 Repo.insert!(%Character{
@@ -224,7 +235,7 @@ Repo.insert!(%Character{
   height: nil,
   weight: nil,
   picture:
-    "https://static.wikia.nocookie.net/naruto/images/7/77/Natsuhi.png/revision/latest?cb=20150529111431"
+    "https://static.wikia.nocookie.net/naruto/images/7/77/Natsuhi.png"
 })
 
 Repo.insert!(%Character{
@@ -236,7 +247,7 @@ Repo.insert!(%Character{
   height: nil,
   weight: nil,
   picture:
-    "https://static.wikia.nocookie.net/naruto/images/4/4c/Natt%C5%8D_Itohiki.png/revision/latest?cb=20201103191411"
+    "https://static.wikia.nocookie.net/naruto/images/4/4c/Natt%C5%8D_Itohiki.png"
 })
 
 Repo.insert!(%Character{
@@ -248,7 +259,7 @@ Repo.insert!(%Character{
   height: nil,
   weight: nil,
   picture:
-    "https://static.wikia.nocookie.net/naruto/images/1/17/Nauma.png/revision/latest?cb=20150723204711"
+    "https://static.wikia.nocookie.net/naruto/images/1/17/Nauma.png"
 })
 
 Repo.insert!(%Character{
@@ -260,7 +271,7 @@ Repo.insert!(%Character{
   height: [140.3],
   weight: [37.2],
   picture:
-    "https://static.wikia.nocookie.net/naruto/images/a/a5/Nawaki_Infobox.png/revision/latest?cb=20160630135236"
+    "https://static.wikia.nocookie.net/naruto/images/a/a5/Nawaki_Infobox.png"
 })
 
 Repo.insert!(%Character{
@@ -272,7 +283,7 @@ Repo.insert!(%Character{
   height: nil,
   weight: nil,
   picture:
-    "https://static.wikia.nocookie.net/naruto/images/2/2b/Nazuna.png/revision/latest?cb=20161116232518"
+    "https://static.wikia.nocookie.net/naruto/images/2/2b/Nazuna.png"
 })
 
 Repo.insert!(%Character{
@@ -284,7 +295,7 @@ Repo.insert!(%Character{
   height: [159.2, 160.1, 172.1],
   weight: [45.8, 46.8, 54.2],
   picture:
-    "https://static.wikia.nocookie.net/naruto/images/8/8e/Neji_Part_I_Screenshot.png/revision/latest?cb=20160118081119"
+    "https://static.wikia.nocookie.net/naruto/images/8/8e/Neji_Part_I_Screenshot.png"
 })
 
 Repo.insert!(%Character{
@@ -296,7 +307,7 @@ Repo.insert!(%Character{
   height: nil,
   weight: nil,
   picture:
-    "https://static.wikia.nocookie.net/naruto/images/4/4d/Nejiri.JPG/revision/latest?cb=20150807090437"
+    "https://static.wikia.nocookie.net/naruto/images/4/4d/Nejiri.JPG"
 })
 
 Repo.insert!(%Character{
@@ -308,7 +319,7 @@ Repo.insert!(%Character{
   height: nil,
   weight: nil,
   picture:
-    "https://static.wikia.nocookie.net/naruto/images/e/ee/Nekobaa.png/revision/latest?cb=20170204180154"
+    "https://static.wikia.nocookie.net/naruto/images/e/ee/Nekobaa.png"
 })
 
 Repo.insert!(%Character{
@@ -320,7 +331,7 @@ Repo.insert!(%Character{
   height: nil,
   weight: nil,
   picture:
-    "https://static.wikia.nocookie.net/naruto/images/7/77/Nekomata.png/revision/latest?cb=20160217064819"
+    "https://static.wikia.nocookie.net/naruto/images/7/77/Nekomata.png"
 })
 
 Repo.insert!(%Character{
@@ -343,7 +354,7 @@ Repo.insert!(%Character{
   height: nil,
   weight: nil,
   picture:
-    "https://static.wikia.nocookie.net/naruto/images/9/9c/Nerugui.png/revision/latest?cb=20150212131159"
+    "https://static.wikia.nocookie.net/naruto/images/9/9c/Nerugui.png"
 })
 
 Repo.insert!(%Character{
@@ -355,7 +366,7 @@ Repo.insert!(%Character{
   height: nil,
   weight: nil,
   picture:
-    "https://static.wikia.nocookie.net/naruto/images/f/fa/Nezumi_Kait%C5%8D.png/revision/latest?cb=20190505232558"
+    "https://static.wikia.nocookie.net/naruto/images/f/fa/Nezumi_Kait%C5%8D.png"
 })
 
 Repo.insert!(%Character{
@@ -367,7 +378,7 @@ Repo.insert!(%Character{
   height: nil,
   weight: nil,
   picture:
-    "https://static.wikia.nocookie.net/naruto/images/d/da/Ni2.png/revision/latest?cb=20160219231433"
+    "https://static.wikia.nocookie.net/naruto/images/d/da/Ni2.png"
 })
 
 Repo.insert!(%Character{
@@ -379,7 +390,7 @@ Repo.insert!(%Character{
   height: nil,
   weight: nil,
   picture:
-    "https://static.wikia.nocookie.net/naruto/images/2/20/Ni%27s_Dogs.png/revision/latest?cb=20140803202906"
+    "https://static.wikia.nocookie.net/naruto/images/2/20/Ni%27s_Dogs.png"
 })
 
 Repo.insert!(%Character{
@@ -391,7 +402,7 @@ Repo.insert!(%Character{
   height: nil,
   weight: nil,
   picture:
-    "https://static.wikia.nocookie.net/naruto/images/4/4e/Nigai2.png/revision/latest?cb=20160226233421"
+    "https://static.wikia.nocookie.net/naruto/images/4/4e/Nigai2.png"
 })
 
 Repo.insert!(%Character{
@@ -403,7 +414,7 @@ Repo.insert!(%Character{
   height: nil,
   weight: nil,
   picture:
-    "https://static.wikia.nocookie.net/naruto/images/5/51/Kyuubi_Naruto_Clone.png/revision/latest?cb=20150722111913"
+    "https://static.wikia.nocookie.net/naruto/images/5/51/Kyuubi_Naruto_Clone.png"
 })
 
 Repo.insert!(%Character{
@@ -415,7 +426,7 @@ Repo.insert!(%Character{
   height: [90.0],
   weight: nil,
   picture:
-    "https://static.wikia.nocookie.net/naruto/images/b/b9/Nin-game.png/revision/latest?cb=20160425233043"
+    "https://static.wikia.nocookie.net/naruto/images/b/b9/Nin-game.png"
 })
 
 Repo.insert!(%Character{
@@ -427,7 +438,7 @@ Repo.insert!(%Character{
   height: [180.0],
   weight: [65.0],
   picture:
-    "https://static.wikia.nocookie.net/naruto/images/f/fc/Nishi.JPG/revision/latest?cb=20150807085116"
+    "https://static.wikia.nocookie.net/naruto/images/f/fc/Nishi.JPG"
 })
 
 Repo.insert!(%Character{
@@ -439,7 +450,7 @@ Repo.insert!(%Character{
   height: nil,
   weight: nil,
   picture:
-    "https://static.wikia.nocookie.net/naruto/images/6/60/Nitora_Take.png/revision/latest?cb=20171209020321"
+    "https://static.wikia.nocookie.net/naruto/images/6/60/Nitora_Take.png"
 })
 
 Repo.insert!(%Character{
@@ -451,7 +462,7 @@ Repo.insert!(%Character{
   height: nil,
   weight: nil,
   picture:
-    "https://static.wikia.nocookie.net/naruto/images/4/47/Nobori.png/revision/latest?cb=20150129192310"
+    "https://static.wikia.nocookie.net/naruto/images/4/47/Nobori.png"
 })
 
 Repo.insert!(%Character{
@@ -474,7 +485,7 @@ Repo.insert!(%Character{
   height: nil,
   weight: nil,
   picture:
-    "https://static.wikia.nocookie.net/naruto/images/5/53/Nonota_HDShot.png/revision/latest?cb=20130117152213"
+    "https://static.wikia.nocookie.net/naruto/images/5/53/Nonota_HDShot.png"
 })
 
 Repo.insert!(%Character{
@@ -486,7 +497,7 @@ Repo.insert!(%Character{
   height: [155.0],
   weight: [42.1],
   picture:
-    "https://static.wikia.nocookie.net/naruto/images/4/4a/Nono_HD_shot.png/revision/latest?cb=20131024132535"
+    "https://static.wikia.nocookie.net/naruto/images/4/4a/Nono_HD_shot.png"
 })
 
 Repo.insert!(%Character{
@@ -498,7 +509,7 @@ Repo.insert!(%Character{
   height: [184.6],
   weight: nil,
   picture:
-    "https://static.wikia.nocookie.net/naruto/images/a/a5/F%C5%ABshin.png/revision/latest?cb=20170105140650"
+    "https://static.wikia.nocookie.net/naruto/images/a/a5/F%C5%ABshin.png"
 })
 
 Repo.insert!(%Character{
@@ -510,7 +521,7 @@ Repo.insert!(%Character{
   height: nil,
   weight: nil,
   picture:
-    "https://static.wikia.nocookie.net/naruto/images/1/1c/Nue.png/revision/latest?cb=20170705112151"
+    "https://static.wikia.nocookie.net/naruto/images/1/1c/Nue.png"
 })
 
 Repo.insert!(%Character{
@@ -522,7 +533,7 @@ Repo.insert!(%Character{
   height: nil,
   weight: nil,
   picture:
-    "https://static.wikia.nocookie.net/naruto/images/c/c5/Nurari.PNG/revision/latest?cb=20170816204616"
+    "https://static.wikia.nocookie.net/naruto/images/c/c5/Nurari.PNG"
 })
 
 Repo.insert!(%Character{
@@ -534,5 +545,5 @@ Repo.insert!(%Character{
   height: nil,
   weight: nil,
   picture:
-    "https://static.wikia.nocookie.net/naruto/images/c/c4/Nurui.png/revision/latest?cb=20160214202654"
+    "https://static.wikia.nocookie.net/naruto/images/c/c4/Nurui.png"
 })

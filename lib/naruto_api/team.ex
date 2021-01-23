@@ -6,10 +6,12 @@ defmodule NarutoApi.Team do
 
   schema "teams" do
     field :name, :string
+    field :picture, :string
 
     timestamps()
   end
 
+  @field [:name, :picture]
   @required [:name]
 
   def build(params) do
@@ -23,7 +25,7 @@ defmodule NarutoApi.Team do
 
   def create_changeset(module_or_team, params) do
     module_or_team
-    |> cast(params, @required)
+    |> cast(params, @field)
     |> validate_required(@required)
   end
 end
