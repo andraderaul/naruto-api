@@ -5,7 +5,7 @@ defmodule NarutoApi do
   defdelegate fetch_character(params), to: Character.Get, as: :call
   defdelegate update_character(params), to: Character.Update, as: :call
   defdelegate delete_character(params), to: Character.Delete, as: :call
-  defdelegate all_character(), to: Character.All, as: :call
+  defdelegate all_character(params), to: Character.All, as: :call
 
   defdelegate create_team(params), to: Team.Create, as: :call
   defdelegate fetch_team(params), to: Team.Get, as: :call
