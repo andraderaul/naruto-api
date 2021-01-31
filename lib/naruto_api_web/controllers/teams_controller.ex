@@ -3,8 +3,8 @@ defmodule NarutoApiWeb.TeamsController do
 
   action_fallback NarutoApiWeb.FallbackController
 
-  def index(conn, _params) do
-    teams = NarutoApi.all_teams()
+  def index(conn, params) do
+    teams = NarutoApi.all_teams(params)
     handle_response(teams, conn, "index.json", :ok)
   end
 
