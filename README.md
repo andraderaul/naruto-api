@@ -1,19 +1,6 @@
 # NarutoApi
 
-To start your Phoenix server:
+This repository is a backend of a web application. The backend framework using for developing this application is the Phoenix. 
+The application contains a few features about anime naruto and under construction yet.
 
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.setup`
-  * Start Phoenix endpoint with `mix phx.server`
-
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
-
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
-
-## Learn more
-
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+You can access the frontend repo [here](https://github.com/andraderaul/naruto-web/)
