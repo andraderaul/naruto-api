@@ -2,7 +2,9 @@ defmodule NarutoApiWeb.Router do
   use NarutoApiWeb, :router
 
   pipeline :api do
-    plug CORSPlug, origin: ["http://localhost:3000", "http://127.0.0.1:3000"]
+    plug CORSPlug,
+      origin: ["http://localhost:3000", "http://127.0.0.1:3000", "https://naruto-web.vercel.app"]
+
     plug :accepts, ["json"]
   end
 
