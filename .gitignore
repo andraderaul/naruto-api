@@ -27,4 +27,4 @@ naruto_api-*.tar
 # this depending on your deployment strategy.
 /priv/static/
 
-./ssh
+.ssh
